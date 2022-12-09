@@ -67,13 +67,13 @@ echo Finished: Preparing mod folder
 echo Starting: Copying mod files into prepared mod folder
 
 if exist "%thisPath%Defs" (
-	robocopy /e /NFL /NDL /NJH /NJS /nc /ns /np "%thisPath%Defs" "%modPath%Defs"
+  robocopy /e /NFL /NDL /NJH /NJS /nc /ns /np "%thisPath%Defs" "%modPath%Defs"
 )
 if exist "%~dp0%Maps" (
-	robocopy /e /NFL /NDL /NJH /NJS /nc /ns /np "%thisPath%Maps" "%modPath%Maps"
+  robocopy /e /NFL /NDL /NJH /NJS /nc /ns /np "%thisPath%Maps" "%modPath%Maps"
 )
 if exist "%~dp0%Texts" (
-	robocopy /e /NFL /NDL /NJH /NJS /nc /ns /np "%thisPath%Texts" "%modPath%Texts"
+  robocopy /e /NFL /NDL /NJH /NJS /nc /ns /np "%thisPath%Texts" "%modPath%Texts"
 )
 
 echo Finished: Copying mod files into prepared mod folder
