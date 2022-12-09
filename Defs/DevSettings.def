@@ -1,0 +1,61 @@
+﻿def DevSettings
+{
+	float building_cost_gold_mod = 1;
+	float building_cost_hammers_mod = 1;
+
+	float gold_income_dev_mod = 1;
+	float piety_income_dev_mod = 1;
+	float books_income_dev_mod = 1;
+	float gold_expenses_dev_mod = 1;
+	float piety_expenses_dev_mod = 1;
+	float books_expenses_dev_mod = 1;
+
+
+	float ai_jihad_upkeep_mult = 0.2
+
+	float unit_food_upkeep_mod = 1
+	float unit_gold_hire_mod = 1
+	float unit_mercenary_gold_hire_mod = 1
+	
+	//-1: use default 
+	// 0: none
+	// 1: statistics and logging; (e.g. dump game stats); advanced camera controls
+	// 2: dev tooltips, debug views, high-impact commands (e.g. conquer kingdom)
+	// 3: low-level manipulations (e.g. kill character)
+	int cheat_level = 0
+
+	bool track_stats_on_non_dev_branches = false; //Stats for Pro-Cons, Actions, Offers
+
+	bool force_endless_game = false;
+	
+	//////////////////////////////////////////////////////////////////////////
+	///////////////////// DIFFICULTY SETTINGS  ///////////////////////////////
+	//////////////////////////////////////////////////////////////////////////
+	// values are per difficulty: <easy>/<normal>/<hard>/<very_hard>
+	float ai_resource_boost = 1 / 2 // default value
+	{
+		gold = 1 / 1 / 1 / 1
+		books = 1 / 1 / 1 / 1
+		piety = 1 / 1 / 1 / 1
+		food = 1 / 1 / 1 / 1
+		levy = 1 / 1 / 1 / 1
+	}
+
+	float min_rebel_pop_time = 60 / 30 / 15 / 0 // in minutes, depending on difficulty settings
+
+	int max_player_initial_wars = 0 / 0 / 1 / 2
+	bool provinces_always_initially_converted = true / true / false / false
+
+	int max_player_rebellions = 1/3/4/6
+	int max_rebels_per_player_kingdom = 5/15/20/30
+	float unit_player_resilience_bonus = 10/0/0/0
+	float army_player_retreat_penalty = 0.5/1/1/1
+
+	// This is about what gets written in audio.log.
+	// It does not concern Debug.Log, do not turn it off in release builds.
+	// 0: Nothing
+	// 1: Error
+	// 2: Warning (incl. previous)
+	// 3: Info (incl. previous)
+	int audio_log_level = 3
+}
