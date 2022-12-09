@@ -5,7 +5,8 @@ set modPath=%UserProfile%\AppData\LocalLow\BlackSeaGames\Sovereign\Saves\Mods\No
 set gamePath=
 
 :: YOU CAN MANUALLY SET THE GAMES PATH HERE! REMOVE THE TWO COLONS (::) BEFORE THE NEXT LINE TO USE IT
-:: set gamePath=S:\SteamLibrary\steamapps\common\Knights of Honor II\
+:: DO NOT PASTE HERE THE LAST DIRECTORIES steamapps\common\Knights of Honor II\
+:: set gamePath=S:\SteamLibrary\
 
 if not "%gamePath%" == "" (
   echo The "gamePath"-variable was manually set! Using: %gamePath%!
